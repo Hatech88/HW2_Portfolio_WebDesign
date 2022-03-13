@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* This is the header section. Setting up the selection choices in the header with the right font family, padding and colors*/
+.selection {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #532a2a;
+}
+
+/* My portfolio title */
+.selection h1 {
+    font-size: 48px;
+}
+
+
+
+.selection nav {
+    margin-right: 20px;
+    float: right;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.selection nav ul li {
+    display: inline-block;
+    margin-left: 45px;
+}
+
+
+/* the sub title secion with the pic */
+.sub-title-section {
+    padding: 120px;
+    display: block;
+    background-image: url("/imges/webdesign\ img1.jpg");
+}
+
+
+/* sub- title text */
+.sub-title-section h2{
+    text-align: right;
+    color: aliceblue;
+    font-size: 40px;
+}
+
+
+
+/* This is for the big box with about me section */
+.first-box {
+    display: flex;
+    border: 5px dotted green;
+    height: 500px;
+    width: 1200px;
+    background-color: rgb(170, 188, 204);
+
+}
+
+
+/* this is the main flexbox that contain the four flexboxes */
+.flexbox-container {
+    display: flex;
+    flex-wrap: wrap;
+   width: 1200px;
+    padding: 100px;
+  margin: 100px;
+  border-left: 3px solid rgb(8, 4, 4);
+  justify-self: unset;
+}
+
+
+/* this is for the four boxes style and everything within */
+.flexbox-item {
+    min-height: 100px;
+    width: 400px;
+    margin: 10px;
+    border: 3px solid #333;
+    background-color: #dfdfdf;
+}
+
+
+.footer {
+    display: block;
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+    background: #13293d;
+    color: #fff;
+  }
+  
+  .footer ul li {
+      display:inline-block;
+      margin: 30px;
+  }
