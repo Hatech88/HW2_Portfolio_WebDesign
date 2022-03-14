@@ -2,8 +2,15 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    /* background-color: antiquewhite; */
 }
 
+
+
+:root {
+    --color1: rgba(106, 228, 228, 0.5);
+    --color2: rgb(170, 188, 204);
+}
 
 /* This is the header section. Setting up the selection choices in the header with the right font family, padding and colors*/
 .selection {
@@ -29,6 +36,7 @@
 
 .selection nav ul li {
     display: inline-block;
+    text-decoration-line: underline;
     margin-left: 45px;
 }
 
@@ -50,49 +58,127 @@
 
 
 
+
+.main-titles h2 {
+    font-size: 40px;
+    /* padding: 200px; */
+    margin: 20px 200px;
+}
+
+
 /* This is for the big box with about me section */
 .first-box {
     display: flex;
-    border: 5px dotted green;
+    border: 5px solid var(--color1);
     height: 500px;
-    width: 1200px;
-    background-color: rgb(170, 188, 204);
-
+    width: 830px;
+    background-color: var(--color2);
 }
 
+#article1 {
+    background-image: url("/imges/img\ 6.gif");
+}
 
 /* this is the main flexbox that contain the four flexboxes */
 .flexbox-container {
     display: flex;
     flex-wrap: wrap;
    width: 1200px;
-    padding: 100px;
-  margin: 100px;
+    padding: 30px;
+    margin: 10px 0px 0px 400px;
   border-left: 3px solid rgb(8, 4, 4);
   justify-self: unset;
+
 }
 
 
+.first-box :hover {
+    background-color: rgb(180, 17, 31);
+  }
+
+
+
+  
 /* this is for the four boxes style and everything within */
 .flexbox-item {
     min-height: 100px;
     width: 400px;
-    margin: 10px;
-    border: 3px solid #333;
+    margin: 10px 10px 10px 5px;
+    border: 5px solid var(--color1);
     background-color: #dfdfdf;
 }
 
 
-.footer {
-    display: block;
-    font-size: 30px;
+
+
+#article2 {
+    background-image: url("/imges/image5.jpg");
+}
+
+#article3 {
+    background-image: url("/imges/img9.jpg");
+}
+
+#article4 {
+    background-image: url("/imges/img\ 6.gif");
+}
+
+#article5 {
+    background-image: url("/imges/img7.jpg");
+}
+
+/* the titels of each box within the main */
+h3 {
+    display: inline-flex;
     padding: 20px;
-    text-align: center;
-    background: #13293d;
-    color: #fff;
+    margin: 10px 10px 10px 0px;
+    text-align: left;
+    background-color: rgba(106, 228, 228, 0.5);
+}
+
+
+.contact-me {
+    font-size: 30px;
+    text-decoration-line: underline;
+}
+
+
+.contact-me ul{
+    display: flex;
+    flex-wrap: wrap;
+   width: 1200px;
+    padding: 30px;
+    margin: 50px 0px 0px 400px;
+  border-left: 3px solid rgb(8, 4, 4);
   }
   
-  .footer ul li {
+  .contact-me ul li {
       display:inline-block;
+      display: flex;
+      flex-wrap: wrap;
       margin: 30px;
   }
+
+
+  /* making the web page mobile respostive using media queries   */
+  @media all and  (max-width: 800px){
+body {
+    color: blue;
+    margin: 0%;
+}
+  }
+
+
+
+  /* 
+  first the media queries
+  fix the links list on top
+  fix the hover/clickable effect
+  fix the main article titles postioning
+  change the paragraphs
+  fix main sections titles 
+  sub title postion
+  fix the flex wrap
+  when click on a section it should scroll down to that section
+  font sizes and colors 
+  */
