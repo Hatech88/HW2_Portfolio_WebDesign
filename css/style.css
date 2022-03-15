@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /* background-color: antiquewhite; */
+   /* background-color: antiquewhite;  */
 }
 
 
@@ -10,10 +10,14 @@
 :root {
     --color1: rgba(106, 228, 228, 0.5);
     --color2: rgb(170, 188, 204);
+    --border-color: black;    
 }
 
 /* This is the header section. Setting up the selection choices in the header with the right font family, padding and colors*/
 .selection {
+    display: flex;
+  flex-direction: row;
+  justify-content: space-between;
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
@@ -28,7 +32,6 @@
 
 
 .selection nav {
-    margin-right: 20px;
     float: right;
     font-size: 25px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -41,28 +44,23 @@
 }
 
 
+a {
+    color: #dfdfdf;
+}
+
+
 /* the sub title secion with the pic */
 .sub-title-section {
+    display: flex;
     padding: 120px;
-    display: block;
     background-image: url("/imges/webdesign\ img1.jpg");
 }
 
 
 /* sub- title text */
 .sub-title-section h2{
-    text-align: right;
     color: aliceblue;
     font-size: 40px;
-}
-
-
-
-
-.main-titles h2 {
-    font-size: 40px;
-    /* padding: 200px; */
-    margin: 20px 200px;
 }
 
 
@@ -70,29 +68,36 @@
 .first-box {
     display: flex;
     border: 5px solid var(--color1);
-    height: 500px;
-    width: 830px;
     background-color: var(--color2);
+    flex-basis: 100%;
+    min-height: 300px;
 }
 
-#article1 {
-    background-image: url("/imges/img\ 6.gif");
+
+
+/* This the about me section and it's title */
+.about-me {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin: 30px 0px 0px 400px;
+  border-left: 3px solid var(--border-color);
 }
 
 /* this is the main flexbox that contain the four flexboxes */
 .flexbox-container {
     display: flex;
     flex-wrap: wrap;
-   width: 1200px;
     padding: 30px;
-    margin: 10px 0px 0px 400px;
-  border-left: 3px solid rgb(8, 4, 4);
-  justify-self: unset;
-
+    margin: 30px 0px 0px 400px;
+  border-left: 3px solid  var(--border-color);
 }
 
 
-.first-box :hover {
+
+/* hover effect for the first box */
+.first-box:hover {
     background-color: rgb(180, 17, 31);
   }
 
@@ -101,15 +106,18 @@
   
 /* this is for the four boxes style and everything within */
 .flexbox-item {
+    flex-basis: 45%;
     min-height: 100px;
-    width: 400px;
-    margin: 10px 10px 10px 5px;
+    margin: 10px 10px 5px 5px;
     border: 5px solid var(--color1);
-    background-color: #dfdfdf;
 }
 
 
 
+/* adding images background to the boxes in the body */
+#article1 {
+    background-image: url("/imges/img8.jpg");
+}
 
 #article2 {
     background-image: url("/imges/image5.jpg");
@@ -138,25 +146,21 @@ h3 {
 
 
 .contact-me {
-    font-size: 30px;
-    text-decoration-line: underline;
-}
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px;
+        margin: 30px 0px 0px 400px;
+      border-left: 3px solid  var(--border-color);
+    }
 
 
-.contact-me ul{
-    display: flex;
-    flex-wrap: wrap;
-   width: 1200px;
-    padding: 30px;
-    margin: 50px 0px 0px 400px;
-  border-left: 3px solid rgb(8, 4, 4);
-  }
+
   
   .contact-me ul li {
-      display:inline-block;
-      display: flex;
-      flex-wrap: wrap;
-      margin: 30px;
+    display: inline-block;
+    text-decoration-line: underline;
+    margin-left: 45px;
+    font-size: 30px;
   }
 
 
@@ -182,3 +186,16 @@ body {
   when click on a section it should scroll down to that section
   font sizes and colors 
   */
+
+
+
+    
+/* this is for the four boxes style and everything within */
+/* .flexbox-item {
+    flex-basis: 100%;
+    flex-direction: row;
+    min-height: 100px;
+    margin: 10px 10px 10px 5px;
+    border: 5px solid var(--color1);
+    background-color: #dfdfdf;
+} */
