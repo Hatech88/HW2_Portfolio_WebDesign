@@ -54,7 +54,7 @@
 .sub-title-section {
     display: flex;
     padding: 120px;
-    background-image: url("/imges/webdesign\ img1.jpg");
+    background-image: url("../imges/webdesign\ img1.jpg");
 }
 
 
@@ -138,23 +138,23 @@
 
 /* adding images background to the boxes in the body */
 #article1 {
-    background-image: url("/imges/img8.jpg");
+    background-image: url("../imges/img8.jpg");
 }
 
 #article2 {
-    background-image: url("/imges/img5.jpg");
+    background-image: url("../imges/img5.jpg");
 }
 
 #article3 {
-    background-image: url("/imges/img9.jpg");
+    background-image: url("../imges/img9.jpg");
 }
 
 #article4 {
-    background-image: url("/imges/img6.gif");
+    background-image: url("../imges/img6.gif");
 }
 
 #article5 {
-    background-image: url("/imges/img7.jpg");
+    background-image: url("../imges/img7.jpg");
 }
 
 
