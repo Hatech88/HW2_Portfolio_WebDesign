@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -6,13 +7,11 @@
 }
 
 
-
 :root {
     --color1: rgba(106, 228, 228, 0.5);
     --color2: rgb(170, 188, 204);
     --border-color: black;    
 }
-
 /* This is the header section. Setting up the selection choices in the header with the right font family, padding and colors*/
 .selection {
     display: flex;
@@ -23,12 +22,10 @@
     background-color: #2a607c;
     color: #532a2a;
 }
-
 /* My portfolio title */
 .selection h1 {
     font-size: 48px;
 }
-
 
 
 .selection nav {
@@ -36,18 +33,15 @@
     font-size: 25px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
 .selection nav ul li {
     display: inline-block;
     text-decoration-line: underline;
     margin-left: 45px;
 }
 
-
 .list1 {
     color: #c7c5e9;
 }
-
 
 
 /* the sub title secion with the pic */
@@ -57,11 +51,10 @@
     background-image: url("../imges/webdesign\ img1.jpg");
 }
 
-
 /* sub- title text */
 .sub-title-section h2{
     justify-content: flex-end;
-    align-items: ;
+    align-items: right;
     color: rgb(197, 251, 255);
     font-size: 30px;
     text-shadow: 5px 5px purple;
@@ -71,20 +64,16 @@
 }
 
 
-
 /* .my-photo {
     display: flex;
     position: relative;
     left: 75px;
     top: 20px;
 }
-
 .my-photo img {
     border-radius: 250px;
     width: 250px;
-
 } */
-
 /* This the about me section and it's title */
 .about-me {
     display: flex;
@@ -94,12 +83,10 @@
     margin: 30px 0px 0px 400px;
   border-left: 3px solid var(--border-color);
 }
-
 .about-me p {
     font-size: 20px;
     font-family:'Times New Roman', Times, serif;
 }
-
 
 /* This is for the big box with about me section */
 .first-box {
@@ -109,7 +96,6 @@
     flex-basis: 100%;
     min-height: 300px;
 }
-
 
 
 
@@ -124,7 +110,6 @@
 }
 
 
-
   
 /* this is for the four boxes style and everything within */
 .flexbox-item {
@@ -135,57 +120,46 @@
 }
 
 
-
 /* adding images background to the boxes in the body */
 #article1 {
     background-image: url("../imges/img8.jpg");
 }
-
 #article2 {
     background-image: url("../imges/img5.jpg");
 }
-
 #article3 {
     background-image: url("../imges/img9.jpg");
 }
-
 #article4 {
     background-image: url("../imges/img6.gif");
 }
-
 #article5 {
     background-image: url("../imges/img7.jpg");
 }
-
 
 /* hover effect for the first box */
 .first-box:hover {
     color: lightgray;
     opacity: .9;
   }
-
 #article2:hover{
         color: lightgray;
         opacity: .9;
       }
-
 
 #article3:hover{
         color: lightgray;
         opacity: .9;
       }
 
-
 #article4:hover{
         color: lightgray;
         opacity: .9;
       }
-
 #article5:hover{
         color: lightgray;
         opacity: .9;
       }
-
 
 
 /* the titels of each box within the main */
@@ -198,7 +172,6 @@
     background-color: rgba(106, 228, 228, 0.5);
 }
 
-
 .contact-me {
         display: flex;
         flex-wrap: wrap;
@@ -207,7 +180,6 @@
       border-left: 3px solid  var(--border-color);
     }
 
-
   
   .contact-me nav ul li {
     display: inline-block;
@@ -215,16 +187,13 @@
     margin-left: 45px;
     font-size: 30px;
   }
-
   .list2 {
       color: blue;
   }
 
-
   .list2:visited {
     color: rgb(140, 0, 255);
   }
-
 
   /* making the web page mobile respostive using media queries   */
   @media all and  (max-width: 800px){
@@ -234,6 +203,29 @@ body {
 }
   }
 
+
+  @media screen and (max-width:768px) {
+      .about-me {
+          margin: 0px;
+        
+      }
+      .flexbox-container{
+          margin: 0px;
+      }
+      .contact-me {
+          margin: 0px;
+      }
+      .selection {
+          flex-direction: column;
+      }
+      .sub-title-section h2 {
+        position:inherit;
+      }
+      .sub-title-section {
+          padding: 20px;
+      }
+
+  }
 
 
   /* 
@@ -248,7 +240,6 @@ body {
   when click on a section it should scroll down to that section
   font sizes and colors 
   */
-
 
 
     
