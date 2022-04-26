@@ -28,18 +28,18 @@
   </head>
 
   <body >
-    <header class="selection">
+    <header class="row bg-dark p-3 selection">
       <h1 class="text-light">My Portfolio</h1>
-      <nav >
-        <ul">
+      <nav>
+        <ul class="navbar mr-auto navbar-brand">
           <li>
-            <a class="list1" href="#article1">WMOS</a>
+            <a class="list1" href="#article1">Project Movie Finder</a>
           </li>
           <li>
-            <a class="list1" href="#article2">Graphic Design</a>
+            <a class="list1" href="#article2">The Weather Dashboard</a>
           </li>
           <li>
-            <a class="list1" href="#article3">Sales &Marketing</a>
+            <a class="list1" href="#article3">Timed Quiz with JavaScript</a>
           </li>
           <li>
             <a class="list1" href="#article4">Project Managment</a>
@@ -51,17 +51,19 @@
       </nav>
     </header>
 
-    <section class="sub-title-section">
+    <section class="row sub-title-section">
       <h2>The Journey of a Thousand Miles Begins with One Step</h2>
+      <div class="row col-md-2 my-photo"> 
+        <img src="./imges/myphoto.png" alt="My-profile-Picture">
+       </div>
+
     </section>
 
     <main>
-<!--       
-      <div class="my-photo"> 
-         <img src="./imges/myphoto.png" alt="My-profile-Picture">
-        </div> -->
 
+  
       <section class="about-me">
+        
         <h2>About Me</h2>
         <!-- add a class for this div so you can change style of the flex box, img, text -->
         <!-- this container is for first flex box and it's image and text its for the big box  -->
@@ -84,39 +86,43 @@
 
       </section>
 
-      <section class="flexbox-container">
+      <section class="main">
 
+          <div id="work">
             <h2>Work</h2>
-        <a id="article1" class="flexbox-item" href="https://hatech88.github.io/Timed-Quiz-HW4/">
-          <div>
-          <h3>WMOS</h3>
-          
-        </div>
-        </a>
-        <!-- Notes for this Section: add class for each div  so you can change the style of text, img, etc -->
-        <div id="article2" class="flexbox-item">
-          <!-- this is the first flex box in section two -->
-          <h3>Graphic Design</h3>
-
-          <p>Picture</p>
-        </div>
-        <div id="article3" class="flexbox-item">
-          <!-- second flex box -->
-          <h3>Sales & Marketing</h3>
-          <p>Picture</p>
-        </div>
-        <div id="article4" class="flexbox-item">
-          <!-- third flex box -->
-          <h3>Project Managment</h3>
-
-          <p>Picture</p>
-        </div>
-        <!-- forth flex box -->
-
-        <div id="article5" class="flexbox-item">
-          <h3>Web Development</h3>
-          <p>Picture</p>
-        </div>
+          </div>
+          <div class="flexbox-container">
+            <a id="article1" class="flexbox-item" href="https://hatech88.github.io/Timed-Quiz-HW4/">
+              <div>
+              <h3>WMOS</h3>
+              
+            </div>
+            </a>
+            <!-- Notes for this Section: add class for each div  so you can change the style of text, img, etc -->
+            <div id="article2" class="flexbox-item">
+              <!-- this is the first flex box in section two -->
+              <h3>Graphic Design</h3>
+    
+              <p>Picture</p>
+            </div>
+            <div id="article3" class="flexbox-item">
+              <!-- second flex box -->
+              <h3>Sales & Marketing</h3>
+              <p>Picture</p>
+            </div>
+            <div id="article4" class="flexbox-item">
+              <!-- third flex box -->
+              <h3>Project Managment</h3>
+    
+              <p>Picture</p>
+            </div>
+            <!-- forth flex box -->
+    
+            <div id="article5" class="flexbox-item">
+              <h3>Web Development</h3>
+              <p>Picture</p>
+            </div>
+          </div>
       </section>
     </main>
 

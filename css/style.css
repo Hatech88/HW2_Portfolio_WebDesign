@@ -13,7 +13,7 @@
     --border-color: black;    
 }
 /* This is the header section. Setting up the selection choices in the header with the right font family, padding and colors*/
-.selection {
+/* .selection {
     display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -21,13 +21,13 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #532a2a;
-}
+} */
 /* My portfolio title */
 .selection h1 {
     font-size: 48px;
 }
 
-
+/* 
 .selection nav {
     float: right;
     font-size: 25px;
@@ -37,7 +37,7 @@
     display: inline-block;
     text-decoration-line: underline;
     margin-left: 45px;
-}
+} */
 
 .list1 {
     color: #c7c5e9;
@@ -47,33 +47,36 @@
 /* the sub title secion with the pic */
 .sub-title-section {
     display: flex;
-    padding: 120px;
+    padding: 20px;
     background-image: url("../imges/webdesign\ img1.jpg");
 }
 
 /* sub- title text */
 .sub-title-section h2{
-    justify-content: flex-end;
-    align-items: right;
+    justify-content: flex;
     color: rgb(197, 251, 255);
     font-size: 30px;
     text-shadow: 5px 5px purple;
-    position: relative;
     left: 750px;
     top: 100px;
 }
 
 
-/* .my-photo {
+#work {
+margin-left: 460px;
+margin-top: 20px;
+}
+
+.my-photo {
     display: flex;
-    position: relative;
-    left: 75px;
-    top: 20px;
+    justify-content: end;
+    /* left: 75px;
+    top: 20px; */
 }
 .my-photo img {
     border-radius: 250px;
     width: 250px;
-} */
+}
 /* This the about me section and it's title */
 .about-me {
     display: flex;
@@ -105,7 +108,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 30px;
-    margin: 30px 0px 0px 400px;
+margin-left: 400px;
   border-left: 3px solid  var(--border-color);
 }
 
@@ -114,9 +117,9 @@
 /* this is for the four boxes style and everything within */
 .flexbox-item {
     flex-basis: 45%;
-    min-height: 100px;
-    margin: 10px 10px 5px 5px;
-    border: 5px solid var(--color1);
+    min-height: 400px;
+    margin: 10px 10px 5px 10px;
+    border: 10px solid var(--color1);
 }
 
 
@@ -228,27 +231,3 @@ body {
   }
 
 
-  /* 
-  first the media queries
-  fix the links list on top
-  fix the hover/clickable effect
-  fix the main article titles postioning
-  change the paragraphs
-  fix main sections titles 
-  sub title postion
-  fix the flex wrap
-  when click on a section it should scroll down to that section
-  font sizes and colors 
-  */
-
-
-    
-/* this is for the four boxes style and everything within */
-/* .flexbox-item {
-    flex-basis: 100%;
-    flex-direction: row;
-    min-height: 100px;
-    margin: 10px 10px 10px 5px;
-    border: 5px solid var(--color1);
-    background-color: #dfdfdf;
-} */
