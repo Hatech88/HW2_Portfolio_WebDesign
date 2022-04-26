@@ -227,6 +227,12 @@ body {
       .sub-title-section {
           padding: 20px;
       }
+      /* .flexbox-container{
+          flex-wrap:inherit;
+      } */
+      #work {
+          position: inherit;
+      }
 
   }
 
