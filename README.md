@@ -26,6 +26,8 @@ CSS:
 Current Webpage:
  ![image](https://user-images.githubusercontent.com/100045862/158505556-7d1f48a7-801c-4fd1-bb22-6ebe4e76a359.png)
 
+![Alt text](./imges/portfolio1.jpg?raw=true "Portfolio1")
+![Alt text](./imges/portfolio2.jpg?raw=true "Portfolio2")
 
 Challenges:
 -	I ran into few issues where some of the elements interfered with my flexbox for a certain section or a class
