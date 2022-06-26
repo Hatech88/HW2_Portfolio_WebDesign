@@ -54,7 +54,7 @@
 /* sub- title text */
 .sub-title-section h2{
     justify-content: flex;
-    color: rgb(197, 251, 255);
+    color: rgb(176, 149, 165);
     font-size: 30px;
     text-shadow: 5px 5px purple;
     left: 750px;
@@ -87,7 +87,7 @@ margin-top: 20px;
   border-left: 3px solid var(--border-color);
 }
 .about-me p {
-    font-size: 20px;
+    font-size: 30px;
     font-family:'Times New Roman', Times, serif;
 }
 
@@ -172,6 +172,15 @@ margin-left: 400px;
       }
 
 
+
+      /* disc */
+      #disc {
+        color: #c7c5e9;
+        font: bold;
+        font-size: 20px;
+        
+      }
+
 /* the titels of each box within the main */
 .flexbox-container h3 {
     display: inline-flex;
@@ -179,7 +188,7 @@ margin-left: 400px;
     margin: 10px 10px 10px 0px;
     font-size: 22px;
     text-align: left;
-    background-color: rgba(106, 228, 228, 0.5);
+    background-color: white;
 }
 
 .contact-me {
