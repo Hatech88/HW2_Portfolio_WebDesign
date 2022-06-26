@@ -139,6 +139,9 @@ margin-left: 400px;
 #article5 {
     background-image: url("../imges/img7.jpg");
 }
+#article6 {
+    background-image: url("../imges/stockalert.jpg");
+}
 
 /* hover effect for the first box */
 .first-box:hover {
@@ -160,6 +163,10 @@ margin-left: 400px;
         opacity: .9;
       }
 #article5:hover{
+        color: lightgray;
+        opacity: .9;
+      }
+#article6:hover{
         color: lightgray;
         opacity: .9;
       }
